@@ -1,0 +1,43 @@
+.ArticleLink {
+    text-decoration: none;
+}
+
+.ArticleBoxBackground {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 950px;
+    height: 180px;
+    background-color: #2b2828;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.Thumbnail {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.ThumbnailText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.ThumbnailTitle {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.ThumbnailDescription {
+    text-align: left;
+    font-size: 14px;
+    color: #ccc;
+}
