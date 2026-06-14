@@ -1,7 +1,5 @@
-import ArticleTestArticle from "../Articles/ArticleTest/ArticleTest";
-
 export default function Dev() {
     return (
-       <ArticleTestArticle />
+       <h1>THIS IS A DEV PAGE</h1>
     );
 }

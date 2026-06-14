@@ -9,7 +9,6 @@ createRoot(document.getElementById('root')!).render(
     <div>
       <HashRouter>
         <App/>
-        <p>SAMPLE TEXT</p>
       </HashRouter>
     </div>
   </StrictMode>

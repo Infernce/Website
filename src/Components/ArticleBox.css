@@ -7,37 +7,40 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    width: 950px;
-    height: 180px;
-    background-color: #2b2828;
+    height: 130px;
+    width: 100%;
+    background-color: #22243593;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.233);
+    margin: 5px;
 }
 
 .Thumbnail {
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
-    margin-right: 20px;
+    margin-right:10px;
+    margin-left: 5px;
 }
 
 .ThumbnailText {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 10px;
+    height: 120px;
 }
 
-.ThumbnailTitle {
+h2.ThumbnailTitle {
     text-align: left;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: bold;
-    color: #fff;
+    margin: 0px;
+    color: #e2e2e2;
 }
 
 .ThumbnailDescription {
     text-align: left;
-    font-size: 14px;
-    color: #ccc;
+    font-size: 13px;
+    margin: 0px;
+    color: #cacacaa6;
 }

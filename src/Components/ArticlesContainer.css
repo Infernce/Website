@@ -1,0 +1,14 @@
+.articlesContainerGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: stretch;
+    width: 99%;
+    margin: 0;
+}
+
+.articlesContainerGrid > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 8px);
+}
