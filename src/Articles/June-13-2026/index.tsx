@@ -1,8 +1,11 @@
-import type { ArticleMeta, ArticleModule } from "../../Components/ArticleModule";
+import { type ArticleMeta, type ArticleModule } from "../../Components/ArticleModule";
 import '../../Components/Article.css'
 import thumbnail from "./thumbnail.jpg"
+import { ArticleHeader } from "../../Components/ArticleSnippets";
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
-import markdown from './June-13-2026.md?raw'
+import markdown from './June-13-2026/June-13-2026.md?raw'
 
 export const meta: ArticleMeta = {
     slug: "June-13-2026",
@@ -13,15 +16,28 @@ export const meta: ArticleMeta = {
 
 export const module: ArticleModule = {
     meta,
-    default: ArticleTemplate
+    default: June_13_2026
 };
 
-export default function ArticleTemplate() {
+export default function June_13_2026() {
     return (
-        <div className="ArticleBorder">
-            <div style={{whiteSpace: "pre-wrap"}}>
-                {markdown}
+        <div>
+            {ArticleHeader(module)}
+            <br/>
+            <br/>
+            <br/>
+            <div className="Article">
+                <div style={{whiteSpace: "pre-wrap",
+                    textAlign: "left"
+                }}>
+                    <Markdown remarkPlugins={[remarkGfm]}>
+                        {markdown}
+                    </Markdown>
+                </div>
             </div>
+            <br/>
+            <br/>
+            <br/>
         </div>
     );
 }

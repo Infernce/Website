@@ -1,3 +1,8 @@
-.ArticleBorder {
-    border: 2px solid #b3b3b3;
+.Article {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.Article.text {
+    text-align: left;
 }
