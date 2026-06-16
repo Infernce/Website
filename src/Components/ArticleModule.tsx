@@ -3,6 +3,7 @@ export type ArticleMeta = {
     title: string;
     description: string;
     thumbnail: string;
+    date_published: string;
 }
 
 export type ArticleModule = {

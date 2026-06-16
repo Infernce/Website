@@ -1,17 +1,18 @@
 import { type ArticleMeta, type ArticleModule } from "../../Components/ArticleModule";
 import '../../Components/Article.css'
 import thumbnail from "./thumbnail.jpg"
-import { ArticleHeader } from "../../Components/ArticleSnippets";
+import { ArticleHeader } from "../ArticleSnippets";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
-import markdown from './June-13-2026/June-13-2026.md?raw'
+import MarkdownFile from './June-13-2026/June-13-2026.md?raw'
 
 export const meta: ArticleMeta = {
     slug: "June-13-2026",
     title: "June 13, 2026",
     description: "Before my whole life changes as I prepare to enter college, I thought to write a post about what I was doing on June 13, 2026, as a memory for my future self.",
-    thumbnail
+    thumbnail,
+    date_published: "2026/06/13"
 }
 
 export const module: ArticleModule = {
@@ -31,7 +32,7 @@ export default function June_13_2026() {
                     textAlign: "left"
                 }}>
                     <Markdown remarkPlugins={[remarkGfm]}>
-                        {markdown}
+                        {MarkdownFile}
                     </Markdown>
                 </div>
             </div>
