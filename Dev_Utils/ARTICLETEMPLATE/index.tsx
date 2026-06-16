@@ -5,7 +5,8 @@ export const meta: ArticleMeta = {
     slug: "template",
     title: "TEMPLATE TITLE",
     description: "TEMPLATE DESCRIPTION",
-    thumbnail
+    thumbnail,
+    date_published: "3000/12/12"
 }
 
 export const module: ArticleModule = {

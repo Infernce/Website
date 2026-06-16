@@ -9,6 +9,8 @@
     justify-content: flex-start;
     height: 130px;
     width: 100%;
+    max-width: 535px;
+    min-width: 533px;
     background-color: #22243593;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.233);
