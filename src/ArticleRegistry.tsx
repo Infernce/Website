@@ -1,5 +1,5 @@
 import { Route } from "react-router-dom";
-import type { ArticleMeta, ArticleModule } from "./Articles/ArticleModule";
+import type { ArticleModule } from "./Articles/ArticleModule";
 import ArticleBox from "./Components/ArticleBox";
 import { parse } from "date-fns"
 
