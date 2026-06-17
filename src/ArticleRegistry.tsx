@@ -1,24 +1,24 @@
 import { Route } from "react-router-dom";
-import type { ArticleModule } from "./Components/ArticleModule";
+import type { ArticleMeta, ArticleModule } from "./Articles/ArticleModule";
 import ArticleBox from "./Components/ArticleBox";
 import { parse } from "date-fns"
 
 const FORMAT: string = "yyyy/MM/dd"
 
 const articles = import.meta.glob<ArticleModule>(
-  "./Articles/**/index.tsx",
+  "./Articles/**/*.mdx",
   { eager: true }
 );
 
 export default function GetArticleRoutes() {
   return Object.values(articles).map((article) => {
-    const Component = article.default;
-
+    const Module = article.default;
+    console.log("dsjklfsdjklfsdjkflsd");
     return (
       <Route
         key={article.meta.slug}
         path={`/articles/${article.meta.slug}`}
-        element={<Component />}
+        element={<Module/>}
       />
     );
   });
