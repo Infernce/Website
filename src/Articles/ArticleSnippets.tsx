@@ -1,7 +1,7 @@
 import { type ArticleMeta } from "./ArticleModule"
 import './ArticleSnippets.css'
 
-export function ArticleHeader(articleMeta: ArticleMeta) {
+export function ArticleHeader( {articleMeta}: {articleMeta: ArticleMeta}) {
     return (
        <div>
             <div className="articleHeaderTitle">
