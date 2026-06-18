@@ -1,5 +1,3 @@
-export default function Dev() {
-    return (
-       <h1>THIS IS A DEV PAGE</h1>
-    );
+export default function() {
+  return <h1> THIS IS A DEV PAGE</h1>
 }
