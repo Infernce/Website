@@ -13,7 +13,6 @@ const articles = import.meta.glob<ArticleModule>(
 export default function GetArticleRoutes() {
   return Object.values(articles).map((article) => {
     const Module = article.default;
-    console.log("dsjklfsdjklfsdjkflsd");
     return (
       <Route
         key={article.meta.slug}
