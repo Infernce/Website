@@ -2,8 +2,13 @@
     white-space: pre-wrap;
     text-align: left;
     max-width: 700px;
+    width: 100%;
     margin: 0 auto;
     padding: 5px;
+}
+
+.articleHeader {
+    width: 100%;
 }
 
 .articleHeaderTitle{
@@ -53,7 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: rgb(56, 55, 55);
     height: 50px;
     width: 100%
 }

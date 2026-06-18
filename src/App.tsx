@@ -8,7 +8,7 @@ import GetArticleRoutes from './ArticleRegistry';
 function App() {
   
   return (
-    <div>
+    <div className='app'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<h1>PAGE NOT FOUND</h1>} />

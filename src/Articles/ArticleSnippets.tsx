@@ -4,7 +4,7 @@ import './ArticleSnippets.css'
 
 export function ArticleHeader( {articleMeta}: {articleMeta: ArticleMeta}) {
     return (
-       <div>
+       <div className="articleHeader">
             <div className="articleHeaderTitle">
                 <h1>{articleMeta.title}</h1>
             </div>
@@ -27,7 +27,6 @@ export function Book ({children}: BookProps) {
         if(pages.length - 1 > pageNum)
         {
             setPageNum(pageNum + 1);
-            console.log(pageNum);
         }
     }
 
@@ -37,8 +36,19 @@ export function Book ({children}: BookProps) {
         }
     }
 
+    const handleKeyDown = (e: any) => {
+        if(e.key === "ArrowLeft") {
+            PrevPage();
+        }
+        if(e.key === "ArrowRight") {
+            NextPage();
+        }
+    }
+
     return (
-        <div className="book">
+        <div className="book"
+                tabIndex={0}
+                onKeyDown={handleKeyDown}>
             <div className="bookPage">
                 {pages[pageNum] ?? null}
             </div>
@@ -52,7 +62,7 @@ export function Book ({children}: BookProps) {
                     value={pageNum}
                     onChange={(e) => {
                         const value = e.target.value;
-                        if (/^\d*$/.test(value)) {
+                        if (/^\d*$/.test(value) && (Number(e.target.value) >= 0 && Number(e.target.value) <= pages.length - 1)) {
                             setPageNum(Number(value));
                         }}}>
 
